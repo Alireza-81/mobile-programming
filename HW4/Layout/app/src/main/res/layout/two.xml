@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <View
+        android:id="@+id/top_black_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:layout_marginHorizontal="30dp"
+        android:layout_alignParentTop="true"/>
+
+    <View
+        android:id="@+id/bottom_black_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:layout_marginHorizontal="30dp"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:id="@+id/center_horizontal_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/top_black_bar"
+        android:layout_above="@id/bottom_black_bar"
+        android:layout_centerVertical="true"
+        android:layout_marginVertical="20dp">
+
+        <View
+            android:id="@+id/left_vertical_black_bar"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:layout_alignParentStart="true"
+            android:layout_marginVertical="20dp"/>
+
+        <View
+            android:id="@+id/right_vertical_black_bar"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/left_vertical_black_bar"
+            android:layout_toStartOf="@id/right_vertical_black_bar" />
+    </RelativeLayout>
+
+</RelativeLayout>
