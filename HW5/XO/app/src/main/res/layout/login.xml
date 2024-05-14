@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/login_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:text="@string/login_page_title"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_page"
+        android:layout_marginTop="16dp"
+        android:hint="@string/username_hint"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="16dp"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play with CPU" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play with another person" />
+
+
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/login_button" />
+
+</RelativeLayout>
