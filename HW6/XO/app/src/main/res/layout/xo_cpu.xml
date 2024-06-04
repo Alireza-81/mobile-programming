@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/choiceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonChooseX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Play as X"
+            android:onClick="onPlayerChoice"/>
+
+        <Button
+            android:id="@+id/buttonChooseO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+
+            android:text="Play as O"
+            android:onClick="onPlayerChoice"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/black">
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:stretchColumns="*">
+
+            <TableRow>
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:textSize="24sp"
+                    android:layout_marginHorizontal="5dp"
+                    android:backgroundTint="@color/white"
+                    android:onClick="onGridButtonClick"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="5dp"
+
+                    android:layout_weight="1"
+                    android:textSize="24sp"
+                    android:backgroundTint="@color/white"
+                    android:onClick="onGridButtonClick"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_marginHorizontal="5dp"
+
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:textSize="24sp"
+                    android:backgroundTint="@color/white"
+                    android:onClick="onGridButtonClick"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="5dp"
+
+                    android:textSize="24sp"
+                    android:backgroundTint="@color/white"
+                    android:onClick="onGridButtonClick"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="5dp"
+
+                    android:textSize="24sp"
+                    android:backgroundTint="@color/white"
+                    android:onClick="onGridButtonClick"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="5dp"
+
+                    android:textSize="24sp"
+                    android:backgroundTint="@color/white"
+                    android:onClick="onGridButtonClick"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="5dp"
+
+                    android:textSize="24sp"
+                    android:backgroundTint="@color/white"
+                    android:onClick="onGridButtonClick"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="5dp"
+
+                    android:textSize="24sp"
+                    android:backgroundTint="@color/white"
+                    android:onClick="onGridButtonClick"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="5dp"
+
+                    android:textSize="24sp"
+                    android:backgroundTint="@color/white"
+                    android:onClick="onGridButtonClick"
+                    android:textColor="@color/black" />
+            </TableRow>
+        </TableLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonLoadGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load Game"
+            android:onClick="loadGameOnClick" />
+    </LinearLayout>
+
+</RelativeLayout>
